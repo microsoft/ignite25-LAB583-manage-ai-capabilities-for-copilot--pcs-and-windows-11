@@ -150,28 +150,56 @@ IF THIS IS A SHARED M365 TENANT, BE SURE TO EXPLAIN USERS SHOULD CREATE INDIVIDU
 
 ### Create Recall Policy using the Settings Catalog
 
-Objective: Build an Intune policy that enables the use of Recall, but block capturing snapshots from your Contoso HR site and a customer relationship application. You want to limit the snapshot storage space to 10 GB on devices, and set a limit of XX days to retain snapshots. You want to enable your European Economic Area (EEA) users to be able to export their snapshot data. 
+Objective: Build an Intune policy that enables the use of Recall, but block capturing snapshots from your Contoso internal employee sites and two different customer relationship applications that contain customer data. You need to limit the snapshot storage space to 10 GB on devices, and set a limit of XX days to retain snapshots. You need to enable your European Economic Area (EEA) users to be able to export their snapshot data. 
 
-1. In the Intune console, navigate to <i>Devices</i>. Under <i>Manage devices</i>, select <b>Configuration</b>
-2. Select <b>Create > New Policy</b>
+1. Before you start with creating your Intune policy, you will need to create two separate text files in order to provide a block list for apps and a block list for websites (URIs).
+2. Launch <b>Notepad</b>
+3. Type or copy the following into your text file
+
+     `https://employee.contoso.com`
+     <br>
+     `https://benefits.contoso.com`
+
+4. <b>Save</b> the file to your <i>Documents</i> folder as <b>DenyUriListForRecall.csv</b> (change the <i>save as type</i> to all files first)
+5. Create a new blank text file in Notepad
+6. <b>Type</b> or <b>copy</b> the following into the new, blank text file
+
+     `ContosoCRM.exe`
+     <br>
+     `HappyCustomers.exe`
+
+7. <b>Save</b> the file to your <i>Documents</i> folder as <b>DenyAppListForRecall.csv</b> (change the <i>save as type</i> to all files first)
+8. After both text files have been saved, you may close Notepad. Return to the Edge browser session with the Intune console.
+9. In the Intune console, navigate to <i>Devices</i>. Under <i>Manage devices</i>, select <b>Configuration</b>
+10. Select <b>Create > New Policy</b>
    1. Platform: <b>Windows 10 and later</b>
    2. Profile type: <b>Settings catalog</b>
    3. Click <b>Create</b>
-3. The Create profile wizard starts
-4. On the <i>Basics</i> page, enter the following information
+11. The Create profile wizard starts
+12. On the <i>Basics</i> page, enter the following information
    1. Name: <i>lastname_firstname</i><b>_Enable Copilot+ PC AI Features</b>
    2. Description: <b>Enable AI features</b>
-5. On the <i>Configuration settings</i> page, click the <b>+Add settings</b> option to open the Settings picker
+13. On the <i>Configuration settings</i> page, click the <b>+Add settings</b> option to open the Settings picker
    1. In the <i>Browse by category</i> list, scroll down to <b>Windows AI</b> and click <b>Windows AI</b>
-   2. The Windows AI settings appear. Select the following settings:
+   2. The Windows AI settings appear. <b>Select</b> the following settings:
       1. Allow Recall Enablement
       2. Allow Recall Export (Windows Insiders only)
       3. Disable AI Data Analysis
-      4. Disable Click To Do
+      4. Disable Click To Do (User)
       5. Set Deny App List For Recall
       6. Set Deny Uri List For Recall
       7. Set Maximum Storage Duration For Recall Snapshots
       8. Set Maximum Storage Space for Recall Snapshots
+      9. You may now close the settings picker.
    3. The selected settings will appear in the left side of your Configuration Settings screen. You will now configure the settings as follows to meet your policy objectives.
       1. Set Maximum Storage Space for Recall Snapshots: Use the drop-down menu to select <b>10 GB</b>
       2. Set Maximum Storage Duration for Recall Snapshots: Use the drop-down menu to select <b>60 days</b>
+      3. At the Set Deny Uri List for Recall setting, click the Import button, <b>de-select</b> the "My data has headers" option, and then browse to the DenyUriListForRecall.csv file you created and saved earlier. Click <b>"Select"</b> to complete the import of the file. <br> <img src="/img/Exercise2-SetDenyUriListForRecall.jpg" alt="Uri Deny List Settings Imported" width="600" /><br>
+      1. At the Set Deny App List for Recall setting, click the Import button, <b>de-select</b> the "My data has headers" option, and then browse to the DenyAppListForRecall.csv file you created and saved earlier. Click <b>"Select"</b> to complete the import of the file. <br> <img src="/img/Exercise2-SetDenyAppListForRecall.jpg" alt="App Deny List Settings Imported" width="600" /><br>
+      2. Set the Disable Click to Do (User) setting to "Click to Do is enabled" if it is not already set to this value
+      3. Set the Disable AI Data Anlysis slider to "Enable Saving Snapshots for Windows" if it is not already set to this value.
+      4. Set the Allow Recall Enablement setting to "Recall is available" if it is not already set to this value.
+      5. Click <b>Next</b> to proceed in the Create profile wizard
+1.  On the Scope tags page, leave the defaults and click <b>Next</b>
+2.  On the Assignments page, leave the defaults (no groups selected) and click <b>Next</b>
+3.  On the Review + create page, validate the configuration settings and then click <b>Create</b>
