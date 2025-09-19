@@ -94,42 +94,43 @@ By default, Windows Recall is not enabled.
 1. From the Start Menu, type in <b>Recall</b> and launch it
 2. When Recall first starts, a tutorial will appear.
 
-INSERT PICTURE RECALL WIZARD
+<img src="/img/Exercise1-RecallFirstTimeUse.jpg" alt="Recall First Time Tutorial" width="600" />
 
 3. Proceed through the wizard, and on the last page you will be prompted to save Snapshots. Select <b>"Yes, save"</b>. You must next authenticate with Windows Hello to complete turning on Recall.
 4. Recall has multiple settings available in the Privacy & Security node of the Settings app. After selecting <b>"Yes, save"</b> you should be redirected to the <b>Privacy & Security > Recall & snapshots</b> page. If you are not redirect, open <b>Settings</b> and navigate to <b>Privacy & Security</b> and then under the section titled <i>Windows permissions</i> select <b>Recall & snapshots</b>.
 
-INSERT PICTURE RECALL SETTINGS
+<img src="/img/Exercise1-Recall-Settings.jpg" alt="Recall Settings Page" width="600" />
 
-5. When there are no MDM policies applied to the device, the end user will have control over items such as how much storage can be used for Recall's snapshots, how long snapshots should persist before auto-deletion, as well as the option to delete snapshots at any time. 
-6. There are user controls (and Admin controls that you will explore later) to manage sensitive information types, apps to be added or removed from Recall and websites to be added or removed from snapshots.
-7. Scroll down to the <b>Advanced Settings</b> option and select <b>Advanced Settings</b>.
+> When there are no MDM policies applied to the device, the end user will have control over items such as how much storage can be used for Recall's snapshots, how long snapshots should persist before auto-deletion, as well as the option to delete snapshots at any time. 
+There are user controls (and Admin controls that you will explore later) to manage sensitive information types, apps to be added or removed from Recall and websites to be added or removed from snapshots.
 
-INSERT PICTURE RECALL ADVANCED SETTINGS
+5. Scroll down to the <b>Advanced Settings</b> option and select <b>Advanced Settings</b>.
 
-8. Note that users can now Reset Recall through a single button. If we were in the European Economic Area, there would also be an option for the end user to export Recall data.
-9. When running, Recall will appear in the lower-right corner of the task bar.
-10. To ensure that some snapshots have been taken, navigate through the Settings app onto a few screens, launch Notepad and type in a short phrase and then close it, or perform some other actions on the device.
+<img src="/img/Exercise1-Recall-AdvancedSettings.jpg" alt="Recall Advanced Settings Page" width="600" />
 
-INSERT PICTURE RECALL TASKBAR
+* Note that users can now Reset Recall through a single button. If we were in the European Economic Area, there would also be an option for the end user to export Recall data.
+* When running, Recall will appear in the lower-right corner of the task bar.
+* To ensure that some snapshots have been taken, <b>navigate</b> through the <b>Settings<b> app onto a few screens, launch <b>Notepad</b> and <b>type</b> in a short phrase and then close Notepad, or perform some other actions on the device.
 
-10. Click on the Recall icon to open it.
-11. Recall now opens to a "Home" view that shows most frequently accessed applications and websites. We are just starting this lab, so you will not have many snapshots to look through.
-12. Recall also supports a Timeline view. Click the <b>Timeline</b> button just below the Home button on the left hand side of Recall.
+<img src="/img/Exercise1-Recall-Icon-Taskbar.jpg" alt="Recall Taskbar Icon" width="200" />
 
-INSERT PICTURE RECALL HOME AND TIMELINE
+6. Click on the Recall icon to open it.
+7. Recall now opens to a "Home" view that shows most frequently accessed applications and websites. We are just starting this lab, so you will not have many snapshots to look through.
+8. Recall also supports a Timeline view. Click the <b>Timeline</b> button just below the Home button on the left hand side of Recall.
 
-13. Users can move back and forth through their timeline using the slider at the bottom of the screen, or the arrow icons at the bottom of the screen. They can also explore snapshots individually with forward/backward arrows that appear on the screen next to each snapshot, or use the arrow keys on the keyboard.
-14. Users can also Search their Recall history using the Search bar at the top. Search includes both text (through Optical Character Recognition) as well as images.
-15. Each snapshot is enabled with Click to Do by default. You can highlight text or images in a snapshot and use Click to Do to perform actions against it.
-16. <b>Navigate</b> to any snapshot in your Recall timeline. 
-17. In the right corner above the snapshot you will see a set of icons. 
+<img src="/img/Exercise1-Recall-HomePage-Timeline.jpg" alt="Recall Home and Timeline Options" width="600" />
+
+12. Users can move back and forth through their timeline using the slider at the bottom of the screen, or the arrow icons at the bottom of the screen. They can also explore snapshots individually with forward/backward arrows that appear on the screen next to each snapshot, or use the arrow keys on the keyboard.
+13. Users can also Search their Recall history using the Search bar at the top. Search includes both text (through Optical Character Recognition) as well as images.
+14. Each snapshot is enabled with Click to Do by default. You can highlight text or images in a snapshot and use Click to Do to perform actions against it.
+15. <b>Navigate</b> to any snapshot in your Recall timeline. 
+16. In the right corner above the snapshot you will see a set of icons. 
     1.  The first icon is to toggle Click to Do on or off within Recall.
     2.  The second icon is to perform a copy of the contents on the snapshot
     3.  The third icon is to delete - either delete all snapshots related to the app/page that is in the snapshot or delete just this specific snapshot
     4.  Finally, a "..." option is available to edit the image in Snipping Tool
-18. Select the delete icon and select Delete snapshot. You will receive a confirmation message first, and then click Delete. Once deleted, snapshots <i>cannot be recovered</i> by any means.
+17. Select the delete icon and select Delete snapshot. You will receive a confirmation message first, and then click Delete. Once deleted, snapshots <i>cannot be recovered</i> by any means.
 
-INSERT PICTURE RECALL DELETE
+<img src="/img/Exercise1-Recall-DeleteSnapshot.jpg" alt="Recall Delete Snapshot Option" width="200" />
 
-19. 
+18. steps here
