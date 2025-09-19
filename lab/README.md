@@ -2,7 +2,7 @@
 
 These instructions are for participants of the **instructor-led** Workshop "LAB583 - Manage AI Capabilities for Copilot+ PCs and Windows 11" at Microsoft Ignite 2025. 
 
-## Lab Overview
+# Lab Overview
 
 In this lab you will gain hands-on experience with enabling and managing AI experiences for Windows. 
 You will explore the customizations available to users and the controls available to IT admins. 
@@ -10,7 +10,7 @@ You will learn how to use Microsoft Intune to fine-tune popular features like Re
 You will also walk through managing privacy and compliance, and end user readiness.
 
 
-## Pre-Requisites
+# Pre-Requisites
 
 To participate in this lab, you will need:
 
@@ -36,7 +36,7 @@ To participate in this lab, you will need:
  
 <img src="/img/Exercise1-System-AIComponents.jpg" alt="Installed AI Components" width="600" />
 
-##### Explore Agentic Search Experience in Settings
+### Explore Agentic Search Experience in Settings
 
 In the Settings app, you will see the search experience is now AI-enabled through the visual cue next to the magnifier.
 
@@ -51,7 +51,7 @@ End users can now search for settings using a natural language query as opposed 
 
  > Note: On a non-Copilot+ PC Settings app, you would see "No results for *the search you made*" if you attempted these same searches
 
-##### Explore Improved Windows Search
+### Explore Improved Windows Search
 
 In the Windows Search Bar, you will see the Windows search experience is now AI-enabled through the visual cue next to the magnifier as shown below:
 
@@ -62,7 +62,7 @@ Improved Windows Search provides end users with the ability to perform searches 
 INSERT STEPS HERE BASED ON SOME OF OUR SAMPLE PICTURES AND DOCUMENTS (TO BE INCLUDED IN ZIP)
 
 
-##### Explore Click to Do
+### Explore Click to Do
 
 Click To Do is a new AI-powered feature that enables users to take contextual actions on anything visible on their screen - text or images - using simple keyboard shortcuts. 
 
@@ -85,10 +85,51 @@ Click To Do is a new AI-powered feature that enables users to take contextual ac
 11. With Click to Do running, highlight the text in the file. Note the options that appear after you finish highlighting the text. From the menu options, select "Rewrite > Refine." 
 13. Observe the output in the Rewrite window. You have the option of copying the rewrite using the Copy in the lower right-hand corner. 
 
-## Discussions
+### Enable Recall
 
-Build your first agent with Azure AI Agent Service is an open source project supported by Microsoft. See the [SUPPORT.md](../SUPPORT.md) file for details on how to raise issues or contribute. If you enjoyed this workshop please give the repository a ⭐ and share it with others.
+Windows Recall is a Copilot+ PC exclusive that provides a running "memory" for the end user of things they have done on their device. Using Recall, a user can quickly search for information that they had seen in an app, web site, or document.
 
-## Source code
+By default, Windows Recall is not enabled. 
 
-The source code for this session can be found in the [src folder](../src) of this repo.
+1. From the Start Menu, type in <b>Recall</b> and launch it
+2. When Recall first starts, a tutorial will appear.
+
+INSERT PICTURE RECALL WIZARD
+
+3. Proceed through the wizard, and on the last page you will be prompted to save Snapshots. Select <b>"Yes, save"</b>. You must next authenticate with Windows Hello to complete turning on Recall.
+4. Recall has multiple settings available in the Privacy & Security node of the Settings app. After selecting <b>"Yes, save"</b> you should be redirected to the <b>Privacy & Security > Recall & snapshots</b> page. If you are not redirect, open <b>Settings</b> and navigate to <b>Privacy & Security</b> and then under the section titled <i>Windows permissions</i> select <b>Recall & snapshots</b>.
+
+INSERT PICTURE RECALL SETTINGS
+
+5. When there are no MDM policies applied to the device, the end user will have control over items such as how much storage can be used for Recall's snapshots, how long snapshots should persist before auto-deletion, as well as the option to delete snapshots at any time. 
+6. There are user controls (and Admin controls that you will explore later) to manage sensitive information types, apps to be added or removed from Recall and websites to be added or removed from snapshots.
+7. Scroll down to the <b>Advanced Settings</b> option and select <b>Advanced Settings</b>.
+
+INSERT PICTURE RECALL ADVANCED SETTINGS
+
+8. Note that users can now Reset Recall through a single button. If we were in the European Economic Area, there would also be an option for the end user to export Recall data.
+9. When running, Recall will appear in the lower-right corner of the task bar.
+10. To ensure that some snapshots have been taken, navigate through the Settings app onto a few screens, launch Notepad and type in a short phrase and then close it, or perform some other actions on the device.
+
+INSERT PICTURE RECALL TASKBAR
+
+10. Click on the Recall icon to open it.
+11. Recall now opens to a "Home" view that shows most frequently accessed applications and websites. We are just starting this lab, so you will not have many snapshots to look through.
+12. Recall also supports a Timeline view. Click the <b>Timeline</b> button just below the Home button on the left hand side of Recall.
+
+INSERT PICTURE RECALL HOME AND TIMELINE
+
+13. Users can move back and forth through their timeline using the slider at the bottom of the screen, or the arrow icons at the bottom of the screen. They can also explore snapshots individually with forward/backward arrows that appear on the screen next to each snapshot, or use the arrow keys on the keyboard.
+14. Users can also Search their Recall history using the Search bar at the top. Search includes both text (through Optical Character Recognition) as well as images.
+15. Each snapshot is enabled with Click to Do by default. You can highlight text or images in a snapshot and use Click to Do to perform actions against it.
+16. <b>Navigate</b> to any snapshot in your Recall timeline. 
+17. In the right corner above the snapshot you will see a set of icons. 
+    1.  The first icon is to toggle Click to Do on or off within Recall.
+    2.  The second icon is to perform a copy of the contents on the snapshot
+    3.  The third icon is to delete - either delete all snapshots related to the app/page that is in the snapshot or delete just this specific snapshot
+    4.  Finally, a "..." option is available to edit the image in Snipping Tool
+18. Select the delete icon and select Delete snapshot. You will receive a confirmation message first, and then click Delete. Once deleted, snapshots <i>cannot be recovered</i> by any means.
+
+INSERT PICTURE RECALL DELETE
+
+19. 
