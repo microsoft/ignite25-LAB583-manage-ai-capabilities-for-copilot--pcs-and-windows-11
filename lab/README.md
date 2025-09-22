@@ -25,23 +25,16 @@ To participate in this lab, you will need:
 
 1. Launch the <b>Settings</b> application.
 2. Navigate to <b>System</b>
-3. Scroll down to <b>AI Components</b> and click on <b>AI Components</b>
-
-<img src="/img/Exercise1-Settings-AI Components.png" alt="Agentic search experience in Settings" width="600" />
-
+3. Scroll down to <b>AI Components</b> and click on <b>AI Components</b><br><img src="/img/Exercise1-Settings-AI Components.png" alt="Agentic search experience in Settings" width="600" /></br>
 
 > Note: On Windows 11 24H2, by default all AI Components are set to a disabled state. On Windows 11 25H2, some AI features are enabled by default: <i>Agentic search experience in Settings, Improved Windows Search, and Click to Do</i>
 
-4. You will see the following AI Components installed locally:
- 
-<img src="/img/Exercise1-System-AIComponents.jpg" alt="Installed AI Components" width="600" />
+4. You will see the following AI Components installed locally:<br><img src="/img/Exercise1-System-AIComponents.jpg" alt="Installed AI Components" width="600" /></br>
 
 ### Explore Agentic Search Experience in Settings
 
 In the Settings app, you will see the search experience is now AI-enabled through the visual cue next to the magnifier.
-
-<img src="/img/Exercise1-AgenticSearch-Settings.jpg" alt="Agentic Search in Settings" width="600" />
-
+<br><img src="/img/Exercise1-AgenticSearch-Settings.jpg" alt="Agentic Search in Settings" width="600" /></br>
 End users can now search for settings using a natural language query as opposed to needing to know precisely which section in Settings they need to be in, or how the Setting is named. Try the following examples to see the types of natural language searches Settings can now handle.
 
 1. In the search field, type in <b>Add a bluetooth device</b>, allow the search results to populate, and hit Enter.  
@@ -53,9 +46,7 @@ End users can now search for settings using a natural language query as opposed 
 
 ### Explore Improved Windows Search
 
-In the Windows Search Bar, you will see the Windows search experience is now AI-enabled through the visual cue next to the magnifier as shown below:
-
-<img src="/img/Exercise1-ImprovedWindowsSearch.png" alt="Improved Windows Search" width="100" />
+In the Windows Search Bar, you will see the Windows search experience is now AI-enabled through the visual cue next to the magnifier as shown below:<br><img src="/img/Exercise1-ImprovedWindowsSearch.png" alt="Improved Windows Search" width="100" /></br>
 
 Improved Windows Search provides end users with the ability to perform searches that extend beyond just file and folder names. Windows can leverage on-device AI to understand the file contents as well, including image recognition.
 
@@ -67,16 +58,10 @@ INSERT STEPS HERE BASED ON SOME OF OUR SAMPLE PICTURES AND DOCUMENTS (TO BE INCL
 Click To Do is a new AI-powered feature that enables users to take contextual actions on anything visible on their screen - text or images - using simple keyboard shortcuts. 
 
 1. Launch the Settings application.
-2. In the Search bar, type in "How do I turn on click to do", wait for the results and then hit enter. You will be taken to <b>Privacy & security > Click to Do</b>
-
-<img src="/img/Exercise1-ClickToDo-Settings.jpg" alt="Click to Do Settings in Privacy and Security" width="600" />
-
+2. In the Search bar, type in "How do I turn on click to do", wait for the results and then hit enter. You will be taken to <b>Privacy & security > Click to Do</b><br><img src="/img/Exercise1-ClickToDo-Settings.jpg" alt="Click to Do Settings in Privacy and Security" width="600" /></br>
 3. As you can see, on Windows 11 25H2, Click to Do is enabled by default, but can be disabled via Intune policy.
 4. Launch Click to Do by pressing <b>Windows key + Q</b> together
-5. The first time a user launches Click to Do, they are presented with an interactive tutorial.
-
-<img src="/img/Exercise1-ClickToDo-TutorialStart.jpg" alt="Click to Do Tutorial" width="400" />
-
+5. The first time a user launches Click to Do, they are presented with an interactive tutorial.<br><img src="/img/Exercise1-ClickToDo-TutorialStart.jpg" alt="Click to Do Tutorial" width="400" /></br>
 6. <b>Complete</b> the Click to Do tutorial
 7. Now let's use Click to Do with documents and images on your Copilot+ PC
 8. Open <b>File Explorer</b>, navigate to <b>Documents\Click to Do Samples</b>, and launch the sample file "FILE GOES HERE" (Note we can also use the Phi Silica Small but Mighty on Device SLM Blog contents for the file) 
@@ -92,33 +77,21 @@ Windows Recall is a Copilot+ PC exclusive that provides a running "memory" for t
 By default, Windows Recall is not enabled. 
 
 1. From the Start Menu, type in <b>Recall</b> and launch it
-2. When Recall first starts, a tutorial will appear.
-
-<img src="/img/Exercise1-RecallFirstTimeUse.jpg" alt="Recall First Time Tutorial" width="600" />
-
+2. When Recall first starts, a tutorial will appear.<br><img src="/img/Exercise1-RecallFirstTimeUse.jpg" alt="Recall First Time Tutorial" width="600" /></br>
 3. Proceed through the wizard, and on the last page you will be prompted to save Snapshots. Select <b>"Yes, save"</b>. You must next authenticate with Windows Hello to complete turning on Recall.
-4. Recall has multiple settings available in the Privacy & Security node of the Settings app. After selecting <b>"Yes, save"</b> you should be redirected to the <b>Privacy & Security > Recall & snapshots</b> page. If you are not redirect, open <b>Settings</b> and navigate to <b>Privacy & Security</b> and then under the section titled <i>Windows permissions</i> select <b>Recall & snapshots</b>.
-
-<img src="/img/Exercise1-Recall-Settings.jpg" alt="Recall Settings Page" width="600" />
-
+4. Recall has multiple settings available in the Privacy & Security node of the Settings app. After selecting <b>"Yes, save"</b> you should be redirected to the <b>Privacy & Security > Recall & snapshots</b> page. If you are not redirect, open <b>Settings</b> and navigate to <b>Privacy & Security</b> and then under the section titled <i>Windows permissions</i> select <b>Recall & snapshots</b>.<br><img src="/img/Exercise1-Recall-Settings.jpg" alt="Recall Settings Page" width="600" /></br>
 > When there are no MDM policies applied to the device, the end user will have control over items such as how much storage can be used for Recall's snapshots, how long snapshots should persist before auto-deletion, as well as the option to delete snapshots at any time. 
 There are user controls (and Admin controls that you will explore later) to manage sensitive information types, apps to be added or removed from Recall and websites to be added or removed from snapshots.
 
-5. Scroll down to the <b>Advanced Settings</b> option and select <b>Advanced Settings</b>.
-
-<img src="/img/Exercise1-Recall-AdvancedSettings.jpg" alt="Recall Advanced Settings Page" width="600" />
+5. Scroll down to the <b>Advanced Settings</b> option and select <b>Advanced Settings</b>.<br><img src="/img/Exercise1-Recall-AdvancedSettings.jpg" alt="Recall Advanced Settings Page" width="600" /></br>
 
 * Note that users can now Reset Recall through a single button. If we were in the European Economic Area, there would also be an option for the end user to export Recall data.
 * When running, Recall will appear in the lower-right corner of the task bar.
 * To ensure that some snapshots have been taken, <b>navigate</b> through the <b>Settings</b> app onto a few screens, launch <b>Notepad</b> and <b>type</b> in a short phrase and then close Notepad, or perform some other actions on the device.
 
-<img src="/img/Exercise1-Recall-Icon-TaskBar.jpg" alt="Recall Taskbar Icon" width="200" />
-
-6. Click on the Recall icon to open it.
+6. Click on the <b>Recall icon</b> to open it.<br><img src="/img/Exercise1-Recall-Icon-TaskBar.jpg" alt="Recall Taskbar Icon" width="200" /></br>
 7. Recall now opens to a "Home" view that shows most frequently accessed applications and websites. We are just starting this lab, so you will not have many snapshots to look through.
-8. Recall also supports a Timeline view. Click the <b>Timeline</b> button just below the Home button on the left hand side of Recall.
-
-<img src="/img/Exercise1-Recall-HomePage-Timeline.jpg" alt="Recall Home and Timeline Options" width="600" />
+8. Recall also supports a Timeline view. Click the <b>Timeline</b> button just below the Home button on the left hand side of Recall.<br><img src="/img/Exercise1-Recall-HomePage-Timeline.jpg" alt="Recall Home and Timeline Options" width="600" /></br>
 
 12. Users can move back and forth through their timeline using the slider at the bottom of the screen, or the arrow icons at the bottom of the screen. They can also explore snapshots individually with forward/backward arrows that appear on the screen next to each snapshot, or use the arrow keys on the keyboard.
 13. Users can also Search their Recall history using the Search bar at the top. Search includes both text (through Optical Character Recognition) as well as images.
@@ -129,10 +102,7 @@ There are user controls (and Admin controls that you will explore later) to mana
     2.  The second icon is to perform a copy of the contents on the snapshot
     3.  The third icon is to delete - either delete all snapshots related to the app/page that is in the snapshot or delete just this specific snapshot
     4.  Finally, a "..." option is available to edit the image in Snipping Tool
-17. Select the delete icon and select Delete snapshot. You will receive a confirmation message first, and then click Delete. Once deleted, snapshots <i>cannot be recovered</i> by any means.
-
-<img src="/img/Exercise1-Recall-DeleteSnapshot.jpg" alt="Recall Delete Snapshot Option" width="200" />
-
+17. Select the delete icon and select Delete snapshot. You will receive a confirmation message first, and then click Delete. Once deleted, snapshots <i>cannot be recovered</i> by any means.<br><img src="/img/Exercise1-Recall-DeleteSnapshot.jpg" alt="Recall Delete Snapshot Option" width="200" /></br>
 18. Close the Recall window. The Recall icon should persist in the task bar. If you click on it, you can see you have the option to Pause snapshots. Leave Recall running for now, as you will be able to use your snapshot history later in this lab to search for actions you have performed.
 
 ## Exercise Two: Configure AI Policies in Intune
