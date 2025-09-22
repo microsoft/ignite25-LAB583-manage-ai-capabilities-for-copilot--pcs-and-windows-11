@@ -70,6 +70,25 @@ Click To Do is a new AI-powered feature that enables users to take contextual ac
 11. With Click to Do running, highlight the text in the file. Note the options that appear after you finish highlighting the text. From the menu options, select "Rewrite > Refine." 
 13. Observe the output in the Rewrite window. You have the option of copying the rewrite using the Copy in the lower right-hand corner. 
 
+### Explore Notepad AI
+
+<b>Objective</b>: Understand the built-in AI capabilities in Notepad
+
+NOTE, IT SAYS M365 COPILOT REQUIRED - WILL USERS HAVE THIS LICENSE IN THE LAB TENANT?
+
+1. Notepad now has AI-enabled features that are not exclusive to Copilot+ PCs. You can run these features on a "regular" Windows 11 PC. This is because the Notepad AI will use the local CPU as its execution provider.
+2. Launch <b>Task Manager</b> and move it to one side of the desktop.
+3. In <b>Task Manager</b>, <b>click</b> the icon for <b>Performance</b> in the left-hand menu.<br><img src="/img/Exercise1-TaskManagerPerformance.jpg" alt="Task Manager Performance Tab" width="600" /></br>
+4. Launch <b>Notepad</b> (use either the Start menu, or using the Windows Search Box and type <b>Notepad</b> and then click on the search results). <b>Move</b> the Notepad window to the other side of your desktop so you can see Task Manager and Notepad side by side.
+5. Notepad should open to an empty canvas named "Untitled." If it doesn't, click the "+" button in the top menu to create a new empty file.<br><img src="/img/Exercise1-NotepadFirstLaunch.jpg" alt="Notepad First Launch" width="600" /></br>
+6. In the upper-right corner of Notepad you should see your Entra account logged into Notepad. Next to it is an AI drop-down menu. The first option is <b>Write</b> and should be the only option if you have an empty file open.<br><img src="/img/Exercise1-NotepadCopilotMenu.jpg" alt="Notepad Copilot Menu" width="200" /></br>
+7.  Select the <b>Write</b> option. If this is the first time launching the option, you will see a tutorial that explains that you will write a prompt and AI will generate a draft in Notepad. Complete the wizard.
+8.  In the prompt, enter "<b>Create a draft blog post about things to see and do in San Francisco.</b>" and then submit the prompt.
+9.  Watch the changes in Task Manager - you should not see any appreciable changes to the NPU.
+10. Select <b>Keep Text</b> when the draft is complete.
+11. Now that the text is in Notepad, you can highlight a paragraph and then using the AI menu, select "<b>Make Longer</b>" to build upon the paragraph. You will get a result, and you can either choose to replace the original text with the new text or discard it. You can also adjust the tone as well as the format.
+12. Select the entire text in Notepad and from the AI menu, select <b>Change Tone > Casual</b> and compare the new text to the old text. 
+
 ### Enable Recall
 
 Windows Recall is a Copilot+ PC exclusive that provides a running "memory" for the end user of things they have done on their device. Using Recall, a user can quickly search for information that they had seen in an app, web site, or document.
