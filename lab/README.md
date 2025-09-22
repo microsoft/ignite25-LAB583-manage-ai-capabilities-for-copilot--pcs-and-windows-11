@@ -150,7 +150,7 @@ IF THIS IS A SHARED M365 TENANT, BE SURE TO EXPLAIN USERS SHOULD CREATE INDIVIDU
 
 ### Create Recall and Click to Do Policy using the Settings Catalog
 
-Objective: Build an Intune policy that enables the use of Recall, but block capturing snapshots from your Contoso internal employee sites and two different customer relationship applications that contain customer data. You need to limit the snapshot storage space to 10 GB on devices, and set a limit of XX days to retain snapshots. You need to enable your European Economic Area (EEA) users to be able to export their snapshot data. 
+Objective: Build an Intune policy that enables the use of Recall, but block capturing snapshots from your Contoso internal employee sites and two different customer relationship applications that contain customer data. You need to limit the snapshot storage space to 10 GB on devices, and set a limit of 60 days to retain snapshots. You need to enable your European Economic Area (EEA) users to be able to export their snapshot data. 
 
 1. Before you start with creating your Intune policy, you will need to create two separate text files in order to provide a block list for apps and a block list for websites (URIs).
 2. Launch <b>Notepad</b>
@@ -262,3 +262,45 @@ Not all AI policy settings are available in the Settings catalog (yet). There ar
 15. On the <i>Review</i> page, review the policy and then click<b>Create</b>
 
 You also could disable these features as well. If your organization needs to disable these features (until they are approved by leadership) you would set the integer value to 1 to put the feature into a disabled state.
+
+### Create Notepad AI (ADMX-backed) Policy
+
+To disable the AI features in Notepad requires an ADMX-backed policy in Intune. The Notepad policy definition file is available as a download from the Microsoft Download site, but to make it easier for lab participants, we have already included the necessary files in OUR DOWNLOAD PACKAGE INSERT HERE.
+
+The Notepad policy definition has a dependency on the Windows Administrative template, which can be found in the local policy store on a Windows 11 device and does not require additional downloading. 
+
+1. In the Intune console, navigate to <i>Devices</i>. Under <i>Manage devices</i>, select <b>Configuration</b>
+2. In the middle of the screen, there are three tabs - Policy (the default view), Import ADMX, and Monitor. 
+3. Click on the <b>Import ADMX</b> tab
+4. Click the <b>Import</b> button <br> <img src="/img/Exercise2-ImportADMXView.png" alt="Import ADMX option in Intune" width="600" /><br>
+5. <b>Selet</b> the <i>folder icon</i> for the ADMX file and then <b>navigate</b> to <b>C:\windows\PolicyDefinitions</b> folder
+6. <b>Select</b> the file <b>Windows.admx</b> and then select <b>Open</b>
+7. Next you will import the Windows localized administrative template. To do this, select the <i>folder icon</i> for the ADML file and then <b>navigate</b> to <b>C:\windows\PolicyDefinitions\en-US</b>
+8. Select the file <b>Windows.adml</b> and then select <b>Open</b> </b>. <br> <img src="/img/Exercise2-ADMXandADMLImported.png" alt="Windows ADMX and ADML Ready to Import" width="600" /><br>
+9. Click <b>Next</b>
+10. Click the <b>Create</b> button
+11. On the <i>Import ADMX</i> page, click <b>Refresh</b> to confirm the upload was successful <br> <img src="/img/Exercise2-WindowsADMXImported.png" alt="Windows ADMX and ADML Imported" width="600" /><br>
+12. After the Windows ADMX has been successfully imported, you can import the Notepad ADMX/ADML files 
+13. On the <i>Import ADMX</i> page, click <b>Import</b> again
+14. Select the <i>folder icon</i> for the ADMX file and then <b>navigate</b> to <b>NEED CORRECT PATH HERE\WindowsNotepadAdminTemplates</b>
+15. Select the <b>WindowsNotepad.admx</b> file and import it.
+15. Select the <i>folder icon</i> for the ADML file and then <b>navigate</b> to the en-US subfolder to locate the <b>WindowsNotepad.adml</b> file and import it. <br> <img src="/img/Exercise2-NotepadADMXADMLImported.png" alt="Notepad ADMX and ADML Imported" width="600" /><br>
+16. Click <b>Next</b>
+17. Click the <b>Create</b> button
+18. On the <i>Import ADMX</i> page, click <b>Refresh</b> to confirm the upload was successful <br> <img src="/img/Exercise2-NotepadADMXSuccessful.png" alt="Notepad ADMX and ADML Imported" width="600" /><br>
+19. In the <b>Intune Devices | Manage Devices | Configuration</b> screen, click back on the <i>Policies</i> tab
+20. Select <b>Create > New Policy</b>
+   1. Platform: <b>Windows 10 and later</b>
+   2. Profile type: <b>Templates</b>
+   3. The <i>Template name</i> list will appear. 
+   4. Select the option <b>Imported Administrative templates (preview)</b>
+   5. Click <b>Create</b> to start the policy creation wizard
+21. On the <i>Basics</i> page, name the policy <i>lastname_firstname_</i><b>Disable Notepad AI features</b>
+22. Click <b>Next</b>
+23. Under <i>Setting name</i>, click on <b>Windows Components</b>, then <b>Notepad</b>, and then <b>Disable AI features in Notepad</b>
+24. This will bring up the policy configuration fly-out. Select <b>Enabled</b> to disable AI features in Notepad. <br> <img src="/img/Exercise2-DisableAIfeaturesInNotepad.jpg" alt="Set Disable AI features in Notepad to Enabled" width="600" /><br>
+25. Click <b>OK</b> to save the setting
+26. Click <b>Next</b> to proceed in the wizard
+27. On the <i>Scope Tags</i> page, leave the Scope tags set to Default and click <b>Next</b>
+28. On the <i>Assignments</i> page, leave the policy unassigned and click <b>Next</b>
+29. Review the policy settings on the <i>Review + create</i> page and then click <b>Create</b>
