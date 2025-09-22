@@ -119,6 +119,12 @@ For more information, setup instructions for other dev clients, and to post comm
 </b></sub></a><br />
             <a href="https://github.com/MSFTEric" title="talk">📢</a> 
     </td>
+    <td align="center"><a href="http://github.com/MSFTEric">
+         <img src="https://github.com/KenGoossens.png" width="100px;" alt="Eric Moe"/><br />
+         <sub><b>Eric Moe
+</b></sub></a><br />
+            <a href="https://github.com/KenGoossens" title="talk">📢</a> 
+    </td>
 </tr></table>
 
 
