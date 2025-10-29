@@ -150,8 +150,6 @@ Click to Do provides a quick way to capture the text in an image. In this part o
 8. You could have pasted the image into PowerPoint, or into a help desk ticket, or any other application that accepts image input.
 9. <b>Close</b> Word without saving the file.
 
-
-===
 # Exercise Four: Explore AI Features in Notepad
 
 <b>Objective</b>: Gain hands-on experience with the built-in AI capabilities in Notepad
@@ -171,60 +169,60 @@ Click to Do provides a quick way to capture the text in an image. In this part o
 7. <b>Move</b> the Notepad window to the other side of your desktop so you can see Task Manager and Notepad side by side.
 8. Notepad should open to an empty canvas named "Untitled." If it doesn't, click the "+" button in the top menu to create a new empty file.
 
-!IMAGE[Exercise1-NotepadFirstLaunch.jpg](instructions310362/Exercise1-NotepadFirstLaunch.jpg){400}
+![Notepad First Launch Experience](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/Exercise1-NotepadFirstLaunch.jpg)
 
 9. In the upper-right corner of Notepad you will see an AI drop-down menu with a Copilot icon. 
 10. If a first-time wizard starts, complete the wizard before proceeding.
 11. <b>Click</b> on the AI drop-down menu, and the first (and only available) option is <b>Write</b>. A Notepad file requires text in it to unlock the additional menu options.
 
-!IMAGE[Exercise1-NotepadCopilotMenu.jpg](instructions310362/Exercise1-NotepadCopilotMenu.jpg){200}
+![Notepad Copilot Menu](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/Exercise1-NotepadCopilotMenu.jpg)
 
 12. From the AI drop-down menu, select the <b>Write</b> option. If this is the first time launching the option, you will see a tutorial that explains that you will write a prompt and AI will generate a draft in Notepad. Complete the wizard before proceeding.
 13. In the Write prompt that appears,type or copy in +++Create a draft blog post about things to see and do in San Francisco.+++ and then submit the prompt.
 14. Watch the changes in Task Manager - you should not see any additional NPU utilization as Notepad AI will leverage the CPU to generate its content.
 
-!IMAGE[Exercise5-NoNPUUtilization.png](instructions310362/Exercise5-NoNPUUtilization.png){500}
+![No NPU Utilization when using Notepad AI](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise5-NoNPUUtilization.png)
 
 15. Select <b>Keep Text</b> when the draft is complete.
 16. Now that the text is in Notepad, you can highlight a paragraph and then using the AI menu, select "<b>Make Longer</b>" to build upon the paragraph. You will get a result, and you can either choose to replace the original text with the new text or discard it. You can also adjust the tone as well as the format. Notice the NPU utilization does not change when rewriting or using other AI options within Notepad.
 17. <b>Select</b> the <b>entire text</b> in Notepad and from the AI menu, select <b>Change Tone > Casual</b> and compare the new text to the old text. 
 18. <b>Close</b> Notepad and Task Manager
 
->[!NOTE]In Exercise Nine you will create an Intune policy to manage the use of AI features in Notepad. 
+>Note: In Exercise Nine you will create an Intune policy to manage the use of AI features in Notepad. 
 
-===
+ 
 # Exercise Five: Explore AI Features in Paint
 
 <b>Objective</b>: The AI Features in Paint are intended to assist end users in generating creative images using natural language prompts. In this Exercise you will discover some of the features available and learn how to use them to build fun images with minimal effort.
 
->[!NOTE]The AI features in Paint require an <b>M365 Copilot license</b> to be assigned to an Entra ID account.
+>Note: The AI features in Paint require an <b>M365 Copilot license</b> to be assigned to an Entra ID account.
 
 1. From the Start menu, launch <b>Paint</b>
 2. <b>Sign into</b> Paint with the M365 Copilot licensed Entra ID account provided to you. The sign-in is in the upper right corner of Paint's menu bar
 3. In the Paint menu bar, locate the <b>Copilot</b> option and open it to see the available options
 
-!IMAGE[Exercise7-Copilot-in-Paint.jpg](instructions310362/Exercise7-Copilot-in-Paint.jpg){700}
+![Copilot in Paint](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise7-Copilot-in-Paint.jpg)
 
 4. The first setting you will try is the <i>Image Creator</i>. Image creator uses natural language prompts to generate a picture. Select <b>Image Creator</b> from the Copilot menu inside of Paint.
 
-!IMAGE[Exercise7-CreateImage.png](instructions310362/Exercise7-CreateImage.png){300}
+![Create Image option in Paint](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise7-CreateImage.png)
 
 5. The <i>Image Creator</i> wizard will start with a short explanation of the feature.
 
-!IMAGE[Exercise7-ImageCreatorWizardStart.png](instructions310362/Exercise7-ImageCreatorWizardStart.png){300}
+![Image Creator Wizard Starts](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise7-ImageCreatorWizardStart.png)
 
 6. <b>Complete</b> the wizard
 7. In the right-hand pane of Paint, the <i>Image Creator</i> is available for you to add information to. For this first exercise, let's use the simple prompt +++a bridge crossing water at sunset+++. You can then choose a style using the drop-down selector. Pick Oil Painting (or any option you prefer)
 
-!IMAGE[Exercise7-Suggestion-With-Format.png](instructions310362/Exercise7-Suggestion-With-Format.png){300}
+![Suggestion with Format](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise7-Suggestion-With-Format.png)
 
 8. At the bottom of the Image Creator pane, click <b>Create</b>
 
-!IMAGE[Exercise7-CreateButton.png](instructions310362/Exercise7-CreateButton.png){100}
+![Create Button](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise7-CreateButton.png)
 
 9. Copilot will build three variant images based off of your prompt.
 
-!IMAGE[Exercise7-ThreeGeneratedVariants.png](instructions310362/Exercise7-ThreeGeneratedVariants.png){300}
+![Three Generated Variants](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise7-ThreeGeneratedVariants.png)
 
 10. <b>Click</b> on a variant image that you like. This will place it into the Paint canvas where you can continue to make markups or just copy it into another application like Word or PowerPoint.
 11. If you prefer a different art style, use the style drop-down to choose an alternate type of image (for instance, Watercolor). Select a differrent style than your original choice and click <b>Create</b> to create three new images based on the new style.
@@ -232,6 +230,7 @@ Click to Do provides a quick way to capture the text in an image. In this part o
 13. In the Copilot menu, select Cocreator to launch the Cocreator option
 
 !IMAGE[Exercise7-LaunchCoCreator.png](instructions310362/Exercise7-LaunchCoCreator.png){300}
+![Launch Cocreator](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/src/Exercise7-LaunchCoCreator.png)
 
 14. Cocreator differs from the Image Creator in that you and Copilot are working together to create your image. Let's suppose you tried a few prompts with Image Creator but the image layout is not what you are looking for. You can use Cocreator so you can start to sketch how you want objects positioned in the picture and the drawing is generated based on your guidance.
 15. In the Cocreator pane, type in +++a bridge at sunset+++, and then in the Paint canvas, begin to sketch out a bridge crossing water at sunset and watch the image get built in the Cocreator pane.
