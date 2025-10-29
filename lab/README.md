@@ -519,6 +519,7 @@ Not all AI policy settings are available in the Settings catalog (yet). There ar
 
 You also could disable these features as well. If your organization needs to disable these features (until they are approved for use) you would set the integer value to 1 to put each feature into a disabled state.
 
+
 # Exercise Nine: Create Notepad AI (ADMX-backed) Policy
 
 <b>Objective</b>: Gain hands-on experience building an Inutne policy to manage the use of AI in Notepad
@@ -583,7 +584,7 @@ The Notepad policy definition has a dependency on the Windows Administrative tem
 
 You have now successfully created three different kinds of policies in Intune to manage AI features on Windows 11 and Copilot+ PCs!
 
-#Exercise Ten: Start an M365 Copilot Researcher task
+# Exercise Ten: Start an M365 Copilot Researcher task
 
 In the very last exercise of this lab you will be using the output of M365 Copilot Researcher as the starting point for leveraging multiple Copilot+ PC AI features. 
 
