@@ -93,18 +93,18 @@ Click to Do offers integrated AI text generation functions like rewrite and summ
 1. Open <b>File Explorer</b>, navigate to <b>C:\LAB583\Exercise3-ClickToDo</b>, and <b>double-click</b> the file <b>PHI-SILICA-BLOG.pdf</b>
 2. Scroll down the PDF until you reach the paragraph that begins with "<i>Running the aforementioned stages</i>" and position the text so that you see 3 or more paragraphs of information as shown in the image below.
 
-!IMAGE[Exercise3-PhiSilica.png](instructions310362/Exercise3-PhiSilica.png){500}
+![Phi Silica](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/Exercise3-PhiSilica.png)
 
 3. Press <b>Windows Key + left mouse click</b> to launch <b>Click to Do</b>
 4. With Click to Do running, <b>hover over</b> the text in the file.
 5. <b>Right-click</b> in the highlighted area to expose menu options
 
-!IMAGE[Exercise3-ClickToDoMenuOptionsText.png](instructions310362/Exercise3-ClickToDoMenuOptionsText.png){500}
+![Click to Do Text Menu Options](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/Exercise3-ClickToDoMenuOptionsText.png)
 
 6. From the menu options, select <b>Rewrite > Refine</b>
 7. Observe the output in the Rewrite window. Click the <b>Copy</b> button in the lower-right corner to copy the text to the clipboard.
 
-!IMAGE[Exercise3-ClicktoDoRewrite.png](instructions310362/Exercise3-ClicktoDoRewrite.png){300}
+![Click to Do Rewrite Option](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/Exercise3-ClicktoDoRewrite.png)
 
 8. Press <b>Esc</b> to close Click to Do
 9. Launch <b>Notepad</b>
@@ -122,7 +122,7 @@ Click to Do provides a quick way to capture the text in an image. In this part o
 4. The Click to Do text options appear when you finish highlighting.
 5. Select <b>Copy</b> to copy the MAC address to the clipboard.
 
-!IMAGE[Exercise3-CopyMACAddress.png](instructions310362/Exercise3-CopyMACAddress.png){500}
+![Copy MAC Address with Click to Do](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/Exercise3-CopyMACAddress.png)
 
 6. Switch to <b>Notepad</b>.
 7. Create a new blank file.
@@ -134,18 +134,18 @@ Click to Do provides a quick way to capture the text in an image. In this part o
 1. Open <b>File Explorer</b>, navigate to <b>C:\LAB583\Exercise3-ClickToDo</b>, and <b>double-click</b> the file <b>RecallExample.png</b>
 2. This sample image has separate, distinct images within it. Suppose you wanted to just copy out the second image that appears in the top row (outlined in the screenshot below)
 
-!IMAGE[Exercise3-PickAnImage.png](instructions310362/Exercise3-PickAnImage.png){500}
+![Select an image with Click to Do](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/Exercise3-PickAnImage.png)
 
 3. Without Click to Do, you could open Snipping Tool, take a snip of it, and then copy it or save the file. Let's see how Click to Do could save you a few steps.
 4. <b>Launch Click to Do</b> (your preference: <b>Windows + Q</b>, <u>or</u> <b>Windows + Left Mouse Click</b>, <u>or</u> <b>swipe in from the right</b>)
 5. <b>Hover</b> over the <i>second image</i> and then <b>left-click</b> <u>or</u> <b>right-click</b> with your mouse and the options menu will appear. Select <b>Copy</b>
 
-!IMAGE[Exercise3-CopyImage.png](instructions310362/Exercise3-CopyImage.png){300}
+![Copy Image with Click to Do](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/Exercise3-CopyImage.png)
 
 6. Open <b>Word</b>
 7. Use <b>Ctrl + V</b> to paste the image into Word  
 
-!IMAGE[Exercise3-PasteImageIntoWord.png](instructions310362/Exercise3-PasteImageIntoWord.png){300}
+![Paste image into Word](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/Exercise3-PasteImageIntoWord.png)
 
 8. You could have pasted the image into PowerPoint, or into a help desk ticket, or any other application that accepts image input.
 9. <b>Close</b> Word without saving the file.
@@ -156,7 +156,7 @@ Click to Do provides a quick way to capture the text in an image. In this part o
 
 <b>Objective</b>: Gain hands-on experience with the built-in AI capabilities in Notepad
 
->[!NOTE]The AI features in Notepad require an <b>M365 Copilot license</b> to be assigned to an Entra ID account.
+>Note: The AI features in Notepad require an <b>M365 Copilot license</b> to be assigned to an Entra ID account.
 
 
 1. Notepad now has AI-enabled features that are <b>not</b> unique to Copilot+ PCs. You can run these features on a "regular" Windows 11 PC. This is because the Notepad AI will use the local CPU as opposed to an NPU.
@@ -164,7 +164,7 @@ Click to Do provides a quick way to capture the text in an image. In this part o
 3. Move the <b>Task Manager</b> window to one side of the desktop.
 4. In <b>Task Manager</b>, in the left-hand menu, <b>click</b> the icon for <b>Performance</b> as shown in the image below.
 
-!IMAGE[Exercise1-TaskManagerPerformance.jpg](instructions310362/Exercise1-TaskManagerPerformance.jpg){600}
+![Task Manager Performance Tab](https://github.com/microsoft/ignite25-LAB583-manage-ai-capabilities-for-copilot--pcs-and-windows-11/blob/main/Exercise1-TaskManagerPerformance.jpg)
 
 5. Launch <b>Notepad</b>.
 6. <b>Sign into</b> Notepad with the M365 Copilot licensed Entra ID account provided to you. The sign-in is in the upper right corner of Notepad's menu bar.
